@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bakery & Cake Shop</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f5f1;
+      color: #4a3f35;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-family: 'Georgia', serif;
+      color: #5a3220;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: bold;
+      color: #4a3f35;
+    }
+
+    .cart-icon {
+      font-size: 20px;
+    }
+
+    /* Top Image Section */
+    .hero-section {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .hero-box {
+      position: relative;
+      width: 300px;
+    }
+
+    .hero-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .hero-box .text-overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* Menu Button */
+    .menu-button {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .menu-button button {
+      background-color: #a0522d;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .menu-button button:hover {
+      background-color: #8b4513;
+    }
+
+    /* Main Hero */
+    .main-hero {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #fff8f2;
+    }
+
+    .main-hero img {
+      max-width: 400px;
+      width: 90%;
+      border-radius: 16px;
+    }
+
+    .main-hero p {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Bakery & <em>Cake Shop</em></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Cakes & Pastries</a>
+      <a href="#">Custom Orders</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="cart-icon">🛒</div>
+  </header>
+
+  <!-- Top Hero Section -->
+  <section class="hero-section">
+    <div class="hero-box">
+      <img src="cake.jpg" alt="Cake">
+      <div class="text-overlay">WHERE EVERY BITE FEELS LIKE HOME</div>
+    </div>
+    <div class="hero-box">
+      <img src="bread.jpg" alt="Bread">
+    </div>
+    <div class="hero-box">
+      <img src="cupcake.jpg" alt="Cupcake">
+      <div class="text-overlay">CRISPY ON THE OUTSIDE, SOFT AND CHEWY IS PURE BLISS</div>
+    </div>
+  </section>
+
+  <!-- Menu Button -->
+  <div class="menu-button">
+    <button>SEE OUR MENU</button>
+  </div>
+
+  <!-- Main Hero / Slider -->
+  <section class="main-hero">
+    <img src="cake.jpg" alt="Main Cake">
+    <p>WHERE EVERY BITE FEELS LIKE HOME</p>
+  </section>
+
+</body>
+</html>
